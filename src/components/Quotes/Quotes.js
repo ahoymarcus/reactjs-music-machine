@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { string } from 'prop-types';
+import { string, func } from 'prop-types';
 
 import { Button } from '../../components';
 
@@ -23,14 +23,14 @@ const Speaker = styled(Quote)`
 `;
 
 
-export const Quotes = ({ quote, speaker }) => {
+export const Quotes = ({ quote, speaker, onUpdate }) => {
 	
 	return (
 		<Wrapper>
 			<p>Following your inspiration...</p>
 			<Quote>{quote}</Quote>
 			<Speaker>- {speaker}</Speaker>
-			<Button>Music library</Button>
+			<Button onClick={onUpdate} >Music library</Button>
 		</Wrapper>
 	);
 }; 
@@ -38,6 +38,7 @@ export const Quotes = ({ quote, speaker }) => {
 Quotes.propTypes = {
 	quote: string,
 	speaker: string,
+	onUpdate: func
 };
 
 

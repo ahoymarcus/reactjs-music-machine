@@ -33,6 +33,7 @@ const RecordImg = styled.img`
 	margin-bottom: 25px;
 	opacity: 0.7;
 	border-radius: 60%;
+	box-shadow: 2px 2px 4px #091554, 2px 2px 10px #b9370ed1;
 `;
 
 
