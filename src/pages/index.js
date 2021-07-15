@@ -1,3 +1,3 @@
 export * from './QuotesMachine';
 export * from './MusicMachine';
-export * from './MusicMachineVer2/';
+export * from './MusicMachineVer2';

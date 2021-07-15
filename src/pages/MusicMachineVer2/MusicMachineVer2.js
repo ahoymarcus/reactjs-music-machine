@@ -29,12 +29,6 @@ const Content = styled.div`
 	
 `;
 
-const Quote = styled.p`
-	font-size: 28px;
-	color: #f1e7e6;
-	text-shadow: 2px 2px 4px red, 2px 2px 10px #b9370e;;
-`;
-
 const RecordImg = styled.img`
 	width: 100%;
 	min-width: 490px;
