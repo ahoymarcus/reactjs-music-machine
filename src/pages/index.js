@@ -1,4 +1,2 @@
-export { default as QuotesApp } from './Quotes';
-
-
-
+export * from './QuotesMachine';
+export * from './MusicMachine';

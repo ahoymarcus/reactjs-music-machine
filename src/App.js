@@ -1,13 +1,15 @@
 import React from 'react';
 
-import { QuotesApp } from './pages';
-
+import './App.css';
+import { QuotesMachine } from './pages';
+import { MusicMachine } from './pages';
 
 
 function App() {
-  return (
-    <QuotesApp />
-  );
+  
+	return (
+		<QuotesMachine />
+	);
 }
 
 export default App;
