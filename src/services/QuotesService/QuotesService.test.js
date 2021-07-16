@@ -6,10 +6,11 @@ import { getQuote } from './QuotesService';
 
 
 
-const json = { test: 'testing' };
+const response = { test: 'testing' };
+
 const server = setupServer(
-	rest.get('http://127.0.0.1:5000', (req, res, ctx) => {
-		return res(ctx.json(json));
+	rest.get(process.env.REACT_APP_API, (req, res, ctx) => {
+		return res(ctx.json(response));
 	})
 );
 
@@ -20,7 +21,7 @@ afterAll(() => server.close());
 test('transform json response into object', async () => {
 	const quote = await getQuote();
 	
-	expect(quote).toStrictEqual(json);  
+	expect(quote).toStrictEqual(response);  
 });
 
 
