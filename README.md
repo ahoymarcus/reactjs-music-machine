@@ -11,8 +11,7 @@ Projeto de desenvolvimento front-end para estudar o novo React Hook. [^1]
 
 
 ### Imagem final do projeto:
-![imagem final da aplicação](./public/imagem final do projeto.png)
-
+![imagem final do projeto](./public/imagem final do projeto.png)
 
 
 
